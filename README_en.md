@@ -26,7 +26,7 @@ It is recommended to use java1.8 version for compilation
 Run Main.java to start
 
 #### Special Note
-The current version is an open source trial version Demo developed by Aeroscien Aviation Technology Co., Ltd. For details about the official commercial version, please contact the relevant personnel of the company
-Company website: http://aeroscien.com/
-E-mail: seansheng@aeroscien.com
-WeChat (same phone): 13262272231
+The current version is an open source trial version Demo developed by Aeroscien Aviation Technology Co., Ltd. For details about the official commercial version, please contact the relevant personnel of the company  
+Company website: http://aeroscien.com/  
+E-mail: seansheng@aeroscien.com  
+WeChat (same phone): 13262272231  
