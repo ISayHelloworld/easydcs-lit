@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import main.view.FlightBoard?>
+<?import javafx.scene.image.Image?>
+<VBox styleClass="VBstyle" fx:id="root" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <Label styleClass="phaseTitle" text="%checkIn"/>
+    <HBox alignment="CENTER_LEFT" fx:id="back" >
+        <HBox fx:id="backImg" alignment="CENTER">
+            <ImageView fitWidth="30" fitHeight="30">
+                <Image url="img/back.png"/>
+            </ImageView>
+        </HBox>
+        <FlightBoard fx:id="flightBoard"/>
+    </HBox>
+    <HBox styleClass="HBstyle" alignment="CENTER_LEFT" prefHeight="50.0">
+        <Label text="%name"/>
+        <TextField fx:id="queryName"/>
+        <Button  styleClass="btnNormal" fx:id="statusBtn" text="%notChecked" prefWidth="100"/>
+        <Label fx:id="peopleNum"/>
+        <Button  styleClass="btnNormal" fx:id="more" text="%more"/>
+        <Button  styleClass="btnNormal" alignment="CENTER_LEFT" fx:id="ures" text="URES">
+            <HBox.margin>
+                <Insets left="10.0" />
+            </HBox.margin>
+        </Button>
+        <HBox HBox.hgrow="ALWAYS">
+        </HBox>
+        <Button  styleClass="btnNormal" fx:id="deleteBoard" alignment="CENTER_RIGHT" text="%deleteCheckIn"/>
+    </HBox>
+
+    <!-- 筛选条件区 -->
+    <TableView fx:id="customerTableView" styleClass="fhb" editable="true" prefHeight="200"/>
+    <HBox styleClass="HBstyle" alignment="CENTER">
+        <Button  styleClass="btnNormal" fx:id="moveDown" prefWidth="100" text="↓"/>
+        <Button  styleClass="btnNormal" fx:id="moveUp" prefWidth="100" text="↑"/>
+    </HBox>
+
+    <!--  已选定用户区  -->
+    <TableView fx:id="customRegisterTable" editable="true" prefHeight="100"/>
+    <Button styleClass="btnNormal" style="-fx-font-size:14"  fx:id="nextStep" text="%nextStep"/>
+</VBox>

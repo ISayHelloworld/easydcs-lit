@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root type="VBox" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <VBox style="-fx-background-color:#f4f4f4;-fx-border-style:solid line-cap round;">
+        <Label text="%date" />
+        <DatePicker fx:id="datePicker" />
+        <VBox>
+            <Label text="%time">
+            <VBox.margin>
+               <Insets top="10.0" />
+            </VBox.margin></Label>
+            <HBox fx:id="timeButtonsPane" alignment="CENTER">
+                <TextField fx:id="hoursTextFiled" prefWidth="30" />
+                <Label text=" : " />
+                <TextField fx:id="minutesTextFiled" prefWidth="30" />
+            </HBox>
+        </VBox>
+        <HBox alignment="CENTER">
+            <Button onAction="#handleOkButtonAction" text="OK">
+            <HBox.margin>
+               <Insets top="8.0" />
+            </HBox.margin></Button>
+        </HBox>
+    </VBox>
+</fx:root>

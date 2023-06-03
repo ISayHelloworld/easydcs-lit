@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox styleClass="VBstyle" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+    <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+        <Label text="%packageType"/>
+        <ComboBox fx:id="type"/>
+    </HBox>
+    <VBox styleClass="VBstyle" fx:id="auto">
+        <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+            <Label text="%num"/>
+            <TextField fx:id="auto_num" text="1" prefWidth="50"/>
+            <Label text="%weight"/>
+            <TextField fx:id="auto_weight" text="" prefWidth="50"/>
+            <Label text="%destination"/>
+            <TextField fx:id="auto_location" text="" prefWidth="100"/>
+        </HBox>
+    </VBox>
+    <VBox styleClass="VBstyle" fx:id="manual">
+        <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+            <Label text="%num"/>
+            <TextField style="-fx-background-color:#eeeeee;" text="1" editable="false" prefWidth="50"/>
+            <Label text="%weight"/>
+            <TextField fx:id="manual_weight"  text="" prefWidth="50"/>
+            <Label text="%destination"/>
+            <TextField fx:id="manual_location" text="" prefWidth="50"/>
+            <Label text="%number"/>
+            <TextField fx:id="manual_number"  text=""/>
+            <CheckBox fx:id="manual_print" text="%isPrint"/>
+        </HBox>
+    </VBox>
+    <Button styleClass="btnNormal"  fx:id="ok" text="%addPackage"/>
+</VBox>

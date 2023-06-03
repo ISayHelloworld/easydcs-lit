@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox styleClass="VBstyle" style="-fx-padding:10px" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+    <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+        <Label styleClass="blackLabel" text="FLT:"/>
+        <Label styleClass="blackLabel" text="--" fx:id="flightAndDate"/>
+        <Label styleClass="blackLabel" text="ROUT:"/>
+        <Label styleClass="blackLabel" text="--" fx:id="fromTo"/>
+        <Label styleClass="blackLabel" text="Status:"/>
+        <Label styleClass="blackLabel" text="--" fx:id="status"/>
+        <Label styleClass="blackLabel" text="/"/>
+        <Label styleClass="blackLabel" text="--" fx:id="statusChangeTime"/>
+    </HBox>
+    <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+        <Label styleClass="blackLabel" text="Aircraft:"/>
+        <Label styleClass="blackLabel" text="--" fx:id="modelNumber"/>
+        <Label styleClass="blackLabel" text=" --" fx:id="airplaneNumber"/>
+        <Label styleClass="blackLabel" text="CSN:"/>
+        <Label styleClass="blackLabel" text="--" fx:id="csn"/>
+        <Label styleClass="blackLabel" text="CAS:"/>
+        <Label styleClass="blackLabel" text="--" fx:id="cas"/>
+    </HBox>
+    <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+        <Label styleClass="blackLabel" text="AVS:"/>
+        <Label styleClass="blackLabel" text="--" fx:id="avs"/>
+    </HBox>
+    <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+        <Label styleClass="blackLabel" text="Gate:"/>
+        <Label styleClass="blackLabel" text="--" fx:id="gate"/>
+        <Label styleClass="blackLabel" text="BDT:"/>
+        <Label styleClass="blackLabel" text="-- --" fx:id="bdt"/>
+        <Label styleClass="blackLabel" text="EDT:"/>
+        <Label styleClass="blackLabel" text="-- --" fx:id="edt"/>
+        <Label styleClass="blackLabel" text="ETA:"/>
+        <Label styleClass="blackLabel" text="-- --" fx:id="eta"/>
+    </HBox>
+    <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+        <Label styleClass="blackLabel" text="RMK:"/>
+        <Label styleClass="blackLabel" text="--" fx:id="remark"/>
+    </HBox>
+    <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+        <Label styleClass="blackLabel" text="REN:"/>
+        <Label styleClass="blackLabel" fx:id="ren"/>
+        <Label styleClass="blackLabel" text="CHLD:"/>
+        <Label styleClass="blackLabel" fx:id="childRen"/>
+        <Label styleClass="blackLabel" text="INF:"/>
+        <Label styleClass="blackLabel" fx:id="infRen"/>
+
+        <Label styleClass="blackLabel" text="RET:"/>
+        <Label styleClass="blackLabel" fx:id="ret"/>
+        <Label styleClass="blackLabel" text="CHLD:"/>
+        <Label styleClass="blackLabel" fx:id="childRet"/>
+        <Label styleClass="blackLabel" text="INF:"/>
+        <Label styleClass="blackLabel" fx:id="infRet"/>
+    </HBox>
+    <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+        <Label styleClass="blackLabel" text="CKN:"/>
+        <Label styleClass="blackLabel" fx:id="ckn"/>
+        <Label styleClass="blackLabel" text="CHLD:"/>
+        <Label styleClass="blackLabel" fx:id="childCkn"/>
+        <Label styleClass="blackLabel" text="INF:"/>
+        <Label styleClass="blackLabel" fx:id="infCkn"/>
+
+        <Label styleClass="blackLabel" text="CKT:"/>
+        <Label styleClass="blackLabel" fx:id="ckt"/>
+        <Label styleClass="blackLabel" text="CHLD:"/>
+        <Label styleClass="blackLabel" fx:id="childCkt"/>
+        <Label styleClass="blackLabel" text="INF:"/>
+        <Label styleClass="blackLabel" fx:id="infCkt"/>
+    </HBox>
+    <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+        <Label styleClass="blackLabel" text="BAG:"/>
+        <Label styleClass="blackLabel" text="0/0" fx:id="bag"/>
+        <Label styleClass="blackLabel" text="BDN:"/>
+        <Label styleClass="blackLabel" fx:id="bdn"/>
+        <Label styleClass="blackLabel" text="CHLD:"/>
+        <Label styleClass="blackLabel" fx:id="childBdn"/>
+        <Label styleClass="blackLabel" text="INF:"/>
+        <Label styleClass="blackLabel" fx:id="infBdn"/>
+    </HBox>
+</VBox>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane fx:controller="main.page.ControlPage" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml">
+    <VBox>
+        <TableView fx:id="logTable" prefWidth="1200" prefHeight="500"/>
+    </VBox>
+</AnchorPane>

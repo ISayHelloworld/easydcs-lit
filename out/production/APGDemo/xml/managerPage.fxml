@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<VBox styleClass="VBstyle" fx:id="root" xmlns="http://javafx.com/javafx/11.0.14-internal"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <VBox styleClass="card">
+        <Label styleClass="phaseTitle" text="%flightSetting"/>
+        <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+            <Label text="%seatPlaneNum"/>
+            <ComboBox fx:id="queryFlight" editable="true" promptText="%unChoose"/>
+        </HBox>
+        <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+            <TextField fx:id="layoutInput" prefWidth="400" promptText="%seatInputTip"/>
+        </HBox>
+        <HBox fx:id="seats"/>
+        <HBox fx:id="typeSetting" styleClass="HBstyle" alignment="CENTER_LEFT">
+            <Label text="%seatTypeSetting"/>
+            <ComboBox fx:id="type"/>
+            <TextField fx:id="seatInput"/>
+        </HBox>
+        <Button styleClass="btnNormal" fx:id="uploadLayout" text="%save"/>
+    </VBox>
+</VBox>

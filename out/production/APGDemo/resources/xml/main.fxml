@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<VBox fx:id="mainRoot" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <HBox fx:id="rootPane">
+        <VBox fx:id="tab" prefWidth="100" alignment="TOP_CENTER" minWidth="200">
+            <HBox alignment="CENTER" prefHeight="120">
+                <ImageView fx:id="backImg" fitWidth="30" fitHeight="30">
+                    <Image url="img/flight.png"/>
+                </ImageView>
+                <Label fx:id="title" text="EASYDCS LIT"/>
+            </HBox>
+            <HBox styleClass="tabChoose" fx:id="tab_account" alignment="CENTER" prefHeight="50">
+                <Label text="%main"/>
+            </HBox>
+            <HBox styleClass="tabChoose" fx:id="tab_control" alignment="CENTER" prefHeight="50">
+                <Label text="%flightControl3"/>
+            </HBox>
+            <HBox styleClass="tabChoose" fx:id="tab_manager" alignment="CENTER" prefHeight="50">
+                <Label text="%flightSetting3"/>
+            </HBox>
+            <HBox styleClass="tabChoose" fx:id="tab_checking" alignment="CENTER" prefHeight="50">
+                <Label text="%checkIn"/>
+            </HBox>
+            <HBox styleClass="tabChoose" fx:id="tab_boarding" alignment="CENTER" prefHeight="50">
+                <Label text="%boarding"/>
+            </HBox>
+            <HBox styleClass="tabChoose" fx:id="tab_data" alignment="CENTER" prefHeight="50">
+                <Label text="%data"/>
+            </HBox>
+            <HBox styleClass="tabChoose" fx:id="tab_setting" alignment="CENTER" prefHeight="50">
+                <Label text="%setting"/>
+            </HBox>
+            <HBox styleClass="tabChoose" fx:id="tab_version" alignment="CENTER" prefHeight="50">
+                <Label text="%version"/>
+            </HBox>
+        </VBox>
+        <AnchorPane fx:id="content">
+        </AnchorPane>
+    </HBox>
+</VBox>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import main.view.FlightBoard?>
+<VBox fx:id="root" style="-fx-spacing:20" styleClass="VBstyle" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <VBox styleClass="card">
+        <Label styleClass="phaseTitle" text="%boarding"/>
+        <HBox alignment="CENTER_LEFT" styleClass="HBstyle" fx:id="back">
+            <HBox fx:id="backImg" alignment="CENTER">
+                <ImageView fitWidth="30" fitHeight="30">
+                    <Image url="img/back.png"/>
+                </ImageView>
+            </HBox>
+            <FlightBoard fx:id="flightBoard"/>
+            <HBox HBox.hgrow="ALWAYS">
+            </HBox>
+            <ComboBox fx:id="checkInStatus"/>
+            <Button styleClass="btnNormal" fx:id="saveStatus" text="%save"/>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" styleClass="HBstyle" prefHeight="50.0">
+            <Label text="%name"/>
+            <TextField fx:id="queryName"/>
+            <Button styleClass="btnNormal" fx:id="statusBtn" text="%notBoard" prefWidth="100"/>
+            <Label fx:id="peopleNum">
+                <HBox.margin>
+                    <Insets left="20.0"/>
+                </HBox.margin>
+            </Label>
+            <Button styleClass="btnNormal" fx:id="more" text="%more"/>
+        </HBox>
+    </VBox>
+
+
+    <!-- 筛选条件区 -->
+    <TableView fx:id="customerTableView" editable="true" prefHeight="200"/>
+    <HBox alignment="CENTER_RIGHT">
+        <Button styleClass="btnNormal" style="-fx-font-size:14" fx:id="submitBoard" text="%boarding"/>
+    </HBox>
+    <HBox>
+        <VBox styleClass="card" alignment="CENTER">
+            <HBox styleClass="HBstyle">
+                <ImageView fitHeight="150" fitWidth="150">
+                    <Image url="img/notBoarded.png"/>
+                </ImageView>
+                <VBox>
+                    <Label text="%notBoard" styleClass="phaseTitle" style="-fx-font-size:30" />
+                    <Label fx:id="notBoardNum" style="-fx-font-size:25" text="--" styleClass="phaseTitle"/>
+                </VBox>
+            </HBox>
+        </VBox>
+        <HBox HBox.hgrow="ALWAYS"/>
+        <VBox styleClass="card" alignment="CENTER">
+            <HBox styleClass="HBstyle">
+                <ImageView fitHeight="150" fitWidth="150">
+                    <Image url="img/boarded.png"/>
+                </ImageView>
+                <VBox>
+                    <Label text="%boarded" styleClass="phaseTitle"  style="-fx-font-size:30" />
+                    <Label fx:id="boardNum" style="-fx-font-size:25" text="--" styleClass="phaseTitle"/>
+                </VBox>
+            </HBox>
+        </VBox>
+    </HBox>
+</VBox>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import main.view.FlightBoard?>
+<?import main.view.PackageAddWindow?>
+<VBox styleClass="VBstyle" fx:id="root" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <Label styleClass="phaseTitle" text="%checkIn"/>
+    <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+        <FlightBoard fx:id="flightBoard"/>
+        <Button  styleClass="btnNormal" fx:id="addBoard" text="%reIssueBoardingPass"/>
+    </HBox>
+    <TableView fx:id="customRegisterTable" editable="true" prefHeight="150"/>
+    <VBox fx:id="registerInfoArea">
+        <TabPane fx:id="tabPaneArea" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="API">
+                    <VBox styleClass="VBstyle" style="-fx-padding:10px" minHeight="0.0" minWidth="0.0"
+                          prefHeight="180.0">
+                        <VBox.margin>
+                            <Insets top="10.0"/>
+                            <Insets left="10.0"/>
+                        </VBox.margin>
+                        <HBox styleClass="HBstyle">
+                            <!--旅客信息-->
+                            <VBox styleClass="VBstyle">
+                                <Label text="%userInfo" styleClass="phaseTitle2"/>
+                                <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                                    <Label text="%lastName" styleClass="columnLabel2"/>
+                                    <Label styleClass="necessary" text="*"/>
+                                    <TextField fx:id="lastName" promptText="%necessary" prefWidth="120"/>
+                                </HBox>
+                                <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                                    <Label text="%firstName" styleClass="columnLabel2"/>
+                                    <Label styleClass="necessary" text="*"/>
+                                    <TextField fx:id="firstName" promptText="%necessary" prefWidth="120"/>
+                                </HBox>
+                                <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                                    <Label text="%middleName" styleClass="columnLabel2"/>
+                                    <Label styleClass="notNecessary" text="*"/>
+                                    <TextField fx:id="middleName" prefWidth="120"/>
+                                </HBox>
+                                <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                                    <Label text="%gender" styleClass="columnLabel2"/>
+                                    <Label styleClass="necessary" text="*"/>
+                                    <TextField fx:id="gender" promptText="%necessary" prefWidth="120"/>
+                                </HBox>
+                                <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                                    <Label text="%country" styleClass="columnLabel2"/>
+                                    <Label styleClass="necessary" text="*"/>
+                                    <TextField fx:id="country" promptText="%necessary" prefWidth="120"/>
+                                </HBox>
+                                <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                                    <Label text="%birthday" styleClass="columnLabel2"/>
+                                    <Label styleClass="necessary" text="*"/>
+                                    <TextField fx:id="birthday" promptText="%necessary" prefWidth="120"/>
+                                </HBox>
+                            </VBox>
+                            <!--护照信息-->
+                            <VBox styleClass="VBstyle">
+                                <Label text="%passportInfo" styleClass="phaseTitle2"/>
+                                <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                                    <Label text="%passportNum" styleClass="columnLabel2"/>
+                                    <Label styleClass="necessary" text="*"/>
+                                    <TextField fx:id="passportNumber" promptText="%necessary" prefWidth="120"/>
+                                </HBox>
+                                <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                                    <Label text="%issueDate" styleClass="columnLabel2"/>
+                                    <Label styleClass="notNecessary" text="*"/>
+                                    <TextField fx:id="issueDate" prefWidth="120"/>
+                                </HBox>
+                                <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                                    <Label text="%validity" styleClass="columnLabel2"/>
+                                    <Label styleClass="notNecessary" text="*"/>
+                                    <TextField fx:id="expireDate" prefWidth="120"/>
+                                </HBox>
+                            </VBox>
+                        </HBox>
+                        <Button  styleClass="btnNormal" text="INF" fx:id="infWindow"/>
+                        <Button  styleClass="btnNormal" text="%save" fx:id="saveApi"/>
+                    </VBox>
+                </Tab>
+                <Tab text="%package">
+                    <VBox styleClass="VBstyle" style="-fx-padding:10px" minHeight="0.0" minWidth="0.0">
+                        <VBox styleClass="VBstyle" fx:id="packageEntity">
+                        </VBox>
+                        <PackageAddWindow fx:id="packageWindow"/>
+                        <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                            <Label text="%checkedBaggage" styleClass="phaseTitle2"/>
+                            <HBox HBox.hgrow="ALWAYS">
+                            </HBox>
+                            <Button  styleClass="btnNormal" fx:id="addPackageList" text="%reIssueLuggageStrip"/>
+                            <Button  styleClass="btnNormal" fx:id="deleteBoard" alignment="CENTER_RIGHT" text="%delete"/>
+                            <VBox.margin>
+                                <Insets top="40.0"/>
+                            </VBox.margin>
+                        </HBox>
+                        <TableView fx:id="packageTable" prefHeight="150"/>
+                    </VBox>
+                </Tab>
+                <Tab text="%spService">
+                    <VBox styleClass="VBstyle" style="-fx-padding:10px" minHeight="0.0" minWidth="0.0"
+                          prefHeight="180.0" prefWidth="200.0">
+                        <VBox fx:id="specialService">
+                            <ComboBox fx:id="spComboBox"/>
+                        </VBox>
+                        <Button styleClass="btnNormal"  text="%save" fx:id="saveSp"/>
+                    </VBox>
+                </Tab>
+                <Tab text="%seatSelect">
+                    <VBox styleClass="VBstyle" style="-fx-padding:10px">
+                        <Label fx:id="seatTip" text="%plsChooseSeat"/>
+                        <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                            <Label text="%stSeat"/>
+                            <Label styleClass="necessary" text="*"/>
+                            <TextField fx:id="assignSeatInput" promptText="%necessary"/>
+                        </HBox>
+                        <HBox fx:id="seats" alignment="CENTER"/>
+                        <Button styleClass="btnNormal"  fx:id="assignSeat" text="%submit"/>
+                    </VBox>
+                </Tab>
+                <Tab disable="true"
+                     text="                                                                                                                ">
+                </Tab>
+                <Tab text="PNL">
+                    <TextArea fx:id="pnl"/>
+                </Tab>
+                <Tab text="%log">
+                    <VBox styleClass="VBstyle">
+                        <TableView fx:id="userLog" prefHeight="150"/>
+                    </VBox>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </VBox>
+    <HBox fx:id="buttonArea" alignment="BOTTOM_LEFT" prefHeight="50">
+        <Button styleClass="btnNormal"  fx:id="lastStep" text="%lastStep">
+        </Button>
+    </HBox>
+</VBox>

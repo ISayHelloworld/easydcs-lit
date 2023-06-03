@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<VBox styleClass="VBstyle" style="-fx-spacing:20" fx:id="root" xmlns="http://javafx.com/javafx/11.0.14-internal"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <VBox styleClass="card">
+        <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+            <Label text="%language"/>
+            <ComboBox fx:id="language">
+                <HBox.margin>
+                    <Insets left="10.0"/>
+                </HBox.margin>
+            </ComboBox>
+        </HBox>
+        <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+            <Label text="%appearanceStyle"/>
+            <VBox styleClass="VBstyle" prefWidth="200">
+                <Label text="开发中，非成品"/>
+                <RadioButton fx:id="light" text="Light"/>
+                <ImageView fitWidth="150" fitHeight="120">
+                    <image>
+                        <Image url="img/lightStyle.png"/>
+                    </image>
+                </ImageView>
+            </VBox>
+            <VBox styleClass="VBstyle" prefWidth="200">
+                <Label text="开发中，非成品"/>
+                <RadioButton fx:id="dark" text="Dark"/>
+                <ImageView fitWidth="150" fitHeight="120">
+                    <image>
+                        <Image url="img/lightStyle.png"/>
+                    </image>
+                </ImageView>
+            </VBox>
+        </HBox>
+    </VBox>
+</VBox>

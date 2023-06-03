@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox styleClass="VBstyle" style="-fx-padding:10px" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+    <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+        <!--旅客信息-->
+        <VBox styleClass="VBstyle">
+            <Label text="%userInfo" styleClass="phaseTitle2"/>
+            <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                <Label text="%lastName" styleClass="columnLabel2"/>
+                <Label styleClass="necessary" text="*"/>
+                <TextField fx:id="lastName" promptText="%necessary" prefWidth="120"/>
+            </HBox>
+            <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                <Label text="%firstName" styleClass="columnLabel2"/>
+                <Label styleClass="necessary" text="*"/>
+                <TextField fx:id="firstName" promptText="%necessary" prefWidth="120"/>
+            </HBox>
+            <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                <Label text="%middleName" styleClass="columnLabel2"/>
+                <Label styleClass="notNecessary" text="*"/>
+                <TextField fx:id="middleName" prefWidth="120"/>
+            </HBox>
+            <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                <Label text="%gender" styleClass="columnLabel2"/>
+                <Label styleClass="necessary" text="*"/>
+                <TextField fx:id="gender" promptText="%necessary" prefWidth="120"/>
+            </HBox>
+            <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                <Label text="%country" styleClass="columnLabel2"/>
+                <Label styleClass="necessary" text="*"/>
+                <TextField fx:id="country" promptText="%necessary" prefWidth="120"/>
+            </HBox>
+            <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                <Label text="%birthday" styleClass="columnLabel2"/>
+                <Label styleClass="necessary" text="*"/>
+                <TextField fx:id="birthday" promptText="%necessary" prefWidth="120"/>
+            </HBox>
+        </VBox>
+        <!--护照信息-->
+        <VBox styleClass="VBstyle">
+            <Label text="%passportInfo" styleClass="phaseTitle2"/>
+            <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                <Label text="%passportNum" styleClass="columnLabel2"/>
+                <Label styleClass="necessary" text="*"/>
+                <TextField fx:id="passportNumber" promptText="%necessary" prefWidth="120"/>
+            </HBox>
+            <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                <Label text="%issueDate" styleClass="columnLabel2"/>
+                <Label styleClass="notNecessary" text="*"/>
+                <TextField fx:id="issueDate" prefWidth="120"/>
+            </HBox>
+            <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                <Label text="%validity" styleClass="columnLabel2"/>
+                <Label styleClass="notNecessary" text="*"/>
+                <TextField fx:id="expireDate" prefWidth="120"/>
+            </HBox>
+        </VBox>
+    </HBox>
+    <Button  styleClass="btnNormal"  text="%save" fx:id="saveApi"/>
+</VBox>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import main.view.FlightBoard?>
+<VBox styleClass="VBstyle" style="-fx-spacing:20;" fx:id="root"
+      xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+    <VBox styleClass="card">
+        <Label styleClass="phaseTitle" text="%queryCondition">
+        </Label>
+        <HBox styleClass="HBstyle"
+              xmlns="http://javafx.com/javafx"
+              xmlns:fx="http://javafx.com/fxml">
+            <VBox.margin>
+                <Insets top="10.0"/>
+            </VBox.margin>
+            <HBox alignment="CENTER">
+                <Label text="%flightNumber">
+                    <HBox.margin>
+                        <Insets right="10.0"/>
+                    </HBox.margin>
+                </Label>
+                <ComboBox fx:id="queryFlight" editable="true" promptText="%unChoose"/>
+            </HBox>
+            <HBox alignment="CENTER">
+                <Label text="from">
+                    <HBox.margin>
+                        <Insets left="10.0"/>
+                    </HBox.margin>
+                </Label>
+                <DatePicker fx:id="datePickFrom">
+                    <HBox.margin>
+                        <Insets left="10.0"/>
+                    </HBox.margin>
+                </DatePicker>
+                <Label text="To">
+                    <HBox.margin>
+                        <Insets left="10.0"/>
+                    </HBox.margin>
+                </Label>
+                <DatePicker fx:id="datePickTo">
+                    <HBox.margin>
+                        <Insets left="10.0"/>
+                    </HBox.margin>
+                </DatePicker>
+                <Button fx:id="query" styleClass="btnNormal" layoutX="10.0" layoutY="10.0" text="%query">
+                    <HBox.margin>
+                        <Insets left="10.0"/>
+                    </HBox.margin>
+                </Button>
+            </HBox>
+        </HBox>
+    </VBox>
+    <VBox styleClass="card">
+        <Label styleClass="phaseTitle" text="%queryResult"/>
+        <Label styleClass="subPhaseTitle" fx:id="queryResult" text="">
+            <VBox.margin>
+                <Insets top="5.0"/>
+            </VBox.margin>
+        </Label>
+        <Label fx:id="baseInfo" text=""/>
+        <FlightBoard fx:id="flightBoard"/>
+    </VBox>
+    <Button styleClass="btnNormal" style="-fx-font-size:14" fx:id="nextStep" text="%nextStep"/>
+</VBox>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<VBox styleClass="VBstyle" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+    <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+        <HBox>
+            <Label text="%name" styleClass="columnLabel"/>
+            <Label styleClass="necessary" text="*" />
+        </HBox>
+        <TextField fx:id="name"/>
+    </HBox>
+    <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+        <HBox>
+            <Label text="%cockpit" styleClass="columnLabel"/>
+            <Label styleClass="necessary" text="*" />
+        </HBox>
+        <TextField fx:id="position"/>
+    </HBox>
+    <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+        <HBox>
+            <Label text="%destination" styleClass="columnLabel"/>
+            <Label styleClass="necessary" text="*" />
+        </HBox>
+        <TextField fx:id="toLocation"/>
+    </HBox>
+    <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+        <HBox>
+            <Label text="%ticketNumber" styleClass="columnLabel"/>
+            <Label styleClass="necessary" text="*" />
+        </HBox>
+        <TextField fx:id="ticketNumber"/>
+    </HBox>
+</VBox>

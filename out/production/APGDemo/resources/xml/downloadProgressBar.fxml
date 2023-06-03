@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox style="-fx-padding:10px" styleClass="VBstyle" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <HBox alignment="CENTER" styleClass="HBstyle">
+        <Label text="%downloadProgress" />
+        <ProgressBar fx:id="downloadProgress" />
+        <Label fx:id="label" text="0%" />
+    </HBox>
+    <HBox styleClass="HBstyle">
+        <Label styleClass="labelTip" text="%updatingTip"/>
+    </HBox>
+</VBox>

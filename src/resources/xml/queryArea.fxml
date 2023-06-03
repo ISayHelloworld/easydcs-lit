@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox
+        fx:id="queryArea"
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml">
+
+    <Button  styleClass="btnNormal"  fx:id="upload" layoutX="10.0" layoutY="10.0" text="%import"/>
+    <HBox>
+        <Label text="%flightNumber">
+            <HBox.margin>
+                <Insets/>
+            </HBox.margin>
+        </Label>
+        <ComboBox fx:id="queryFlight" editable="true"/>
+        <VBox.margin>
+            <Insets top="30.0"/>
+        </VBox.margin>
+    </HBox>
+    <HBox>
+        <Text>From</Label>
+        <DatePicker fx:id="datePickFrom">
+            <HBox.margin>
+                <Insets left="10.0"/>
+            </HBox.margin>
+        </DatePicker>
+        <Label text="To">
+            <HBox.margin>
+                <Insets left="30.0"/>
+            </HBox.margin>
+        </Label>
+        <DatePicker fx:id="datePickTo">
+            <HBox.margin>
+                <Insets left="10.0"/>
+            </HBox.margin>
+        </DatePicker>
+        <VBox.margin>
+            <Insets top="20.0"/>
+        </VBox.margin>
+    </HBox>
+    <Button  styleClass="btnNormal"  fx:id="query" layoutX="10.0" layoutY="10.0" text="%query">
+        <VBox.margin>
+            <Insets top="20.0"/>
+        </VBox.margin>
+    </Button>
+    <Label fx:id="queryResult" text="--" x="10.0" y="60.0">
+        <VBox.margin>
+            <Insets top="10.0"/>
+        </VBox.margin>
+    </Label>
+    <Label fx:id="baseInfo" text="--" x="10.0" y="60.0"/>
+</VBox>

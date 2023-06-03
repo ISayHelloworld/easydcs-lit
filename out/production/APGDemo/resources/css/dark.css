@@ -1,0 +1,119 @@
+.btnNormal {
+    -fx-background-color: #336c93;
+    -fx-text-fill: white;
+    -fx-background-radius: 6;
+    -fx-font-size:12;
+}
+#mainRoot {
+   -fx-background-color:#102135;
+}
+.btnNormal:pressed {
+   -fx-text-fill: #102135;
+}
+#tab {
+    -fx-background-color:#03375f;
+}
+.label {
+    -fx-text-fill:white;
+}
+.reverseLabel {
+    -fx-text-fill:black;
+}
+.blackLabel {
+    -fx-text-fill:black;
+}
+#title {
+    -fx-font-size:25
+}
+.tabChoose:hover {
+    -fx-background-color:#63b4ff;
+    -fx-width:40;
+}
+.phaseTitle {
+    -fx-font-size:20;
+    -fx-text-fill:white;
+    -fx-font-weight:normal;
+}
+.phaseTitle2 {
+    -fx-font-size:16;
+    -fx-text-fill:white;
+    -fx-font-weight:normal;
+}
+.subPhaseTitle {
+    -fx-font-size:14;
+    -fx-text-fill:#d6dbe3;
+}
+.combo-box .arrow-button {
+    -fx-background-color: white;
+    -fx-border-color:#bfc3c8;
+}
+.date-picker .arrow-button {
+    -fx-background-color: white;
+    -fx-border-color:#bfc3c8;
+}
+.table-view .column-header-background{
+    -fx-background-color: #035d98;
+}
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+.VBstyle{
+    -fx-spacing: 5;
+}
+.HBstyle{
+    -fx-spacing: 10;
+}
+.columnLabel{
+    -fx-text-fill: black;
+    -fx-pref-width: 100;
+}
+.columnLabel2{
+    -fx-text-fill: white;
+    -fx-pref-width: 90;
+}
+.labelTip {
+    -fx-font-size:10;
+    -fx-text-fill:#ecf1f7;
+    -fx-font-weight:normal;
+}
+.loginBg {
+    -fx-background-image: url("../img/loginBgDark.png");
+    -fx-pref-width:280;
+    -fx-pref-height:320;
+}
+.loginBg2{
+    -fx-background-color: #eef1f5;
+    -fx-pref-width:350;
+    -fx-spacing: 10;
+}
+.whiteBitLabel{
+    -fx-text-fill:white;
+    -fx-font-size:20;
+}
+.btnSquare{
+    -fx-background-color: #336c93;
+    -fx-text-fill: white;
+    -fx-font-size:18;
+}
+.btnSquare:pressed{
+   -fx-text-fill: #102135;
+}
+.card {
+   -fx-background-color: #0d3b5a;
+   -fx-background-radius: 8;
+   -fx-padding:20;
+   -fx-spacing: 5;
+}
+.radio-button {
+    -fx-text-fill:white;
+}
+.necessary {
+    -fx-text-fill:red;
+}
+.notNecessary {
+    -fx-text-fill:#102135;
+}

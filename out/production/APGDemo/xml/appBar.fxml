@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.HBox?>
+<HBox prefHeight="300" alignment="CENTER_LEFT" xmlns="http://javafx.com/javafx/11.0.14-internal">
+    <Label text="EasyDCS LIT"/>
+    <HBox HBox.hgrow="ALWAYS">
+    </HBox>
+    <ImageView fitHeight="30" fitWidth="30">
+        <Image url="img/hide.png"/>
+    </ImageView>
+    <ImageView fitHeight="30" fitWidth="30">
+        <Image url="img/zoom.png"/>
+    </ImageView>
+    <ImageView fitHeight="30" fitWidth="30">
+        <Image url="img/exit.png"/>
+    </ImageView>
+</HBox>

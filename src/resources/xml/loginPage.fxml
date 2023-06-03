@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<VBox fx:id="root" style="-fx-spacing:20" alignment="CENTER" styleClass="VBstyle" xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <HBox fx:id="loginArea" alignment="CENTER">
+        <VBox alignment="CENTER" styleClass="loginBg">
+            <Label style="-fx-font-size:45" styleClass="whiteBitLabel" text="EasyDCS LIT"/>
+            <Label styleClass="whiteBitLabel" text="Welcome to EasyDCS LIT"/>
+            <HBox.margin>
+                <Insets/>
+            </HBox.margin>
+        </VBox>
+        <VBox id="LoginPane" alignment="CENTER_LEFT" styleClass="loginBg2" xmlns="http://javafx.com/javafx/8">
+            <VBox alignment="CENTER_LEFT" styleClass="VBstyle">
+                <Label styleClass="blackLabel" text="%account"/>
+                <TextField fx:id="account" maxWidth="260" prefHeight="45.0" promptText="%accountTip"/>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" styleClass="VBstyle">
+                <Label styleClass="blackLabel" text="%password"/>
+                <PasswordField fx:id="pwd" maxWidth="260" prefHeight="45.0" promptText="%passwordTip"/>
+            </VBox>
+            <CheckBox fx:id="remember" mnemonicParsing="false" text="%rememberPassword"/>
+            <Button fx:id="loginBtn" prefWidth="260" styleClass="btnSquare" text="%login">
+                <VBox.margin>
+                    <Insets top="20.0"/>
+                </VBox.margin>
+            </Button>
+            <padding>
+                <Insets left="40.0"/>
+            </padding>
+            <HBox.margin>
+                <Insets/>
+            </HBox.margin>
+        </VBox>
+        <VBox.margin>
+            <Insets top="140.0"/>
+        </VBox.margin>
+    </HBox>
+    <VBox id="accountInfo" styleClass="card" xmlns="http://javafx.com/javafx/8">
+        <VBox styleClass="VBstyle">
+            <Label styleClass="phaseTitle" text="%accountInfo"/>
+            <HBox styleClass="HBstyle">
+                <Label text="%accountLabel"/>
+                <Label fx:id="myAccount"/>
+            </HBox>
+            <HBox styleClass="HBstyle">
+                <Label text="%authorityLabel"/>
+                <Label fx:id="authority"/>
+            </HBox>
+            <HBox styleClass="HBstyle">
+                <Label text="%companyLabel"/>
+                <Label fx:id="company"/>
+                <ComboBox fx:id="companyList"/>
+                <Button fx:id="saveCompany" text="%save"/>
+            </HBox>
+        </VBox>
+        <Button fx:id="logout" style="-fx-font-size:14" styleClass="btnNormal" text="%logout"/>
+    </VBox>
+</VBox>

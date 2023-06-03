@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+    <HBox>
+        <ImageView fx:id="icon" fitWidth="50" fitHeight="50">
+            <Image url="img/flight.png"/>
+        </ImageView>
+        <VBox prefWidth="100" alignment="CENTER">
+            <Label text="%flightNumber"/>
+            <Label fx:id="flightNumber">--</Label>
+        </VBox>
+        <VBox prefWidth="100" alignment="CENTER">
+            <Label text="%flightDate"/>
+            <Label fx:id="flightDate" text="--/--"/>
+        </VBox>
+        <VBox prefWidth="100" alignment="CENTER">
+            <Label text="%fromTo"/>
+            <Label fx:id="fromTo" text="--" />
+        </VBox>
+        <VBox prefWidth="100" alignment="CENTER">
+            <Label text="%status"/>
+            <Label fx:id="status" text="--" />
+        </VBox>
+    </HBox>
+</VBox>

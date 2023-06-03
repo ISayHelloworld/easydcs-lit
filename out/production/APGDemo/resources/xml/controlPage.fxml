@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import main.view.DateTimePicker?>
+<?import main.view.FlightBoard?>
+<VBox styleClass="VBstyle" style="-fx-spacing:20" fx:id="root" xmlns="http://javafx.com/javafx/11.0.14-internal"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <HBox style="-fx-spacing: 20">
+        <VBox styleClass="card">
+            <Label styleClass="phaseTitle" text="%flightControl"/>
+            <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                <Button styleClass="btnNormal" fx:id="textInput" text="%importPnl"/>
+                <ComboBox fx:id="queryFlight" editable="true" promptText="%unChoose"/>
+                <Button styleClass="btnNormal" fx:id="query" layoutX="10.0" layoutY="10.0" text="%query"/>
+                <HBox HBox.hgrow="ALWAYS">
+                </HBox>
+            </HBox>
+            <FlightBoard fx:id="flightBoard"/>
+            <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                <Label text="%planeNum"/>
+                <TextField fx:id="airplaneNumber" prefWidth="110"/>
+                <Label text="%boardingTime"/>
+                <HBox alignment="CENTER">
+                    <TextField fx:id="boardingHour" prefWidth="30"/>
+                    <Label text=" : "/>
+                    <TextField fx:id="boardingMin" prefWidth="30"/>
+                </HBox>
+                <Label text="%boardingGate"/>
+                <TextField fx:id="boardingGate" prefWidth="110"/>
+            </HBox>
+            <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                <Label text="%takeOffTime"/>
+                <DateTimePicker fx:id="takeOffTime"/>
+                <Label text="%landTime"/>
+                <DateTimePicker fx:id="landTime"/>
+            </HBox>
+            <HBox styleClass="HBstyle" alignment="CENTER_LEFT">
+                <Label text="%remark"/>
+                <TextField fx:id="remark"/>
+            </HBox>
+        </VBox>
+        <VBox styleClass="card">
+            <Label styleClass="phaseTitle" text="%flightStatus"/>
+            <HBox alignment="CENTER_LEFT" styleClass="HBstyle">
+                <Label text="%checkInStatus"/>
+                <ComboBox fx:id="checkingStatus" promptText="%unChoose"/>
+            </HBox>
+            <Button styleClass="btnNormal" fx:id="saveAll" text="%save"/>
+            <Button styleClass="btnNormal" fx:id="controlLogBtn" text="%controlLog">
+                <VBox.margin>
+                    <Insets top="15.0"/>
+                </VBox.margin>
+            </Button>
+        </VBox>
+    </HBox>
+
+
+    <VBox styleClass="card">
+        <Label styleClass="phaseTitle" text="%seatSetting"/>
+        <HBox alignment="CENTER_LEFT" styleClass="HBstyle">
+            <Label text="%seatPlaneNum"/>
+            <ComboBox fx:id="queryModel" editable="true"/>
+        </HBox>
+        <HBox fx:id="seats"/>
+        <HBox fx:id="typeSetting" styleClass="HBstyle" alignment="CENTER_LEFT">
+            <Label text="%seatTypeSetting"/>
+            <ComboBox fx:id="type"/>
+            <TextField fx:id="seatInput"/>
+        </HBox>
+        <Button styleClass="btnNormal" fx:id="saveSeat" text="%save"/>
+    </VBox>
+</VBox>
